@@ -1,0 +1,57 @@
+.detailsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.imgStatsContainer {
+  display: flex;
+  margin-top: 50px;
+}
+
+.img {
+  width: 200px;
+  margin-right: 50px;
+}
+
+.progressBarWhite {
+  height: 20px;
+  width: 700px;
+  background: #ddd;
+}
+
+.progressBarGreen {
+  height: 20px;
+  background: #009200;
+}
+
+.progressBar {
+  display: flex;
+  gap: 40px;
+}
+
+.nameText {
+  text-transform: capitalize;
+}
+
+.nameContainer {
+  background-color: #009200;
+  height: 100px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nameContainer p {
+  font-size: 35px;
+  color: white;
+  margin: 0px;
+}
+
+.statName {
+  width: 50px;
+  margin: 5px;
+}

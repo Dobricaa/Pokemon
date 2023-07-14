@@ -1,0 +1,12 @@
+.listContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 95px;
+  margin: 120px;
+  margin-top: 100px;
+}
+
+pagination-controls {
+  text-align: center;
+}

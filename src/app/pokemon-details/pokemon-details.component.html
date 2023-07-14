@@ -1,0 +1,84 @@
+<div class="detailsContainer">
+  <div class="nameContainer">
+    <p class="nameText">{{ pokemonDetails?.name }}</p>
+  </div>
+
+  <div class="imgStatsContainer">
+    <div class="imgContainer">
+      <img class="img" [src]="pokemonDetails?.sprites.back_default" />
+    </div>
+    <div class="statsBox">
+      <div class="progressBar">
+        <p class="statName">HP</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[0].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[0].base_stat }}
+          </div>
+        </div>
+      </div>
+
+      <div class="progressBar">
+        <p class="statName">Attack</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[1].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[1].base_stat }}
+          </div>
+        </div>
+      </div>
+
+      <div class="progressBar">
+        <p class="statName">Defense</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[2].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[2].base_stat }}
+          </div>
+        </div>
+      </div>
+
+      <div class="progressBar">
+        <p class="statName">Speed</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[3].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[3].base_stat }}
+          </div>
+        </div>
+      </div>
+
+      <div class="progressBar">
+        <p class="statName">Sp Atk</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[4].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[4].base_stat }}
+          </div>
+        </div>
+      </div>
+
+      <div class="progressBar">
+        <p class="statName">Sp Def</p>
+        <div class="progressBarWhite">
+          <div
+            [ngStyle]="{ 'width.%': [pokemonDetails?.stats[5].base_stat] }"
+            class="progressBarGreen"
+          >
+            {{ pokemonDetails?.stats[5].base_stat }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

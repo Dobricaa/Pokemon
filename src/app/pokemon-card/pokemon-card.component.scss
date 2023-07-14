@@ -1,0 +1,31 @@
+.cardContainer {
+  position: relative;
+  height: 300px;
+  width: 220px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 10px;
+  border-width: 0.1px;
+  background-color: #e2f2fc;
+  cursor: pointer;
+}
+
+.cardContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.pokemonImage {
+  height: 170px;
+}
+
+.pokemonName {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

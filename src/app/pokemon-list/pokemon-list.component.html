@@ -1,0 +1,14 @@
+<div class="listContainer">
+  <app-pokemon-card
+    *ngFor="
+      let pokemon of pokemons
+        | paginate
+          : { itemsPerPage: 30, currentPage: page, totalItems: totalPokemons }
+    "
+    [pokemon]="pokemon"
+    [routerLink]="['/details', this.pokemon.url.split('/')[6]]"
+  ></app-pokemon-card>
+</div>
+<pagination-controls
+  (pageChange)="page = $event; pokemons = []; getPokemons()"
+></pagination-controls>
